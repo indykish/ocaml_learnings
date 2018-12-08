@@ -1,0 +1,4 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+Pdfscrap	/home/ram/code/mortg/ocaml/pdfscrap/bin/pdfscrap.ml	/^$/;"	M	language:OCaml
+revolt	/home/ram/code/mortg/ocaml/pdfscrap/bin/pdfscrap.ml	/^let revolt () = match Array.to_list Sys.argv with$/;"	v	language:OCaml
+Revolt	/home/ram/code/rioos/ocaml/ocaml_cmd/bin/revolt.ml	/^(* open Cmdliner$/;"	M	language:OCaml

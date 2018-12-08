@@ -1,0 +1,5 @@
+(executable
+ (name pdfscrap)
+  (modules pdfscrap)
+  (libraries cmdliner camlpdf))
+

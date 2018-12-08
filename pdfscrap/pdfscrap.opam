@@ -1,0 +1,27 @@
+opam-version: "2.0"
+maintainer:   "nkishore@megam.io"
+authors:      ["Kishorekumar Neelamegam"]
+license:      "MIT"
+homepage:     "https://gitlab.com/indykish/pdfscrap"
+bug-reports:  "https://gitlab.com/indykish/pdfscrap/issues"
+dev-repo:     "https://gitlab.com/indykish/pdfscrap.git"
+doc:          "https://gitlab.com/indykish/pdfscrap"
+
+build: [
+ ["dune" "subst"] {pinned}
+ ["dune" "build" "-p" name "-j" jobs]
+]
+
+depends: [
+  "ocaml"   {>= "4.07.0"}
+  "dune"    {build & >= "1.4.0"}
+  "lwt" {>= "4.0.1"}
+  "lwt_ppx"
+  "result"
+  "fmt" {>= "0.8.0"} 
+  "cstruct" {>= "1.6.0"}
+  "jsonm" {>= "1.0.0"}
+  "logs" {>= "0.5.0"}
+  "astring"
+]
+available: [ocaml-version >= "4.07.0"]
