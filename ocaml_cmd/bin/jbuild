@@ -1,0 +1,8 @@
+(jbuild_version 1)
+
+(executable
+ ((name revolt)
+  (modules (revolt))
+  (libraries (cmdliner depyt))  
+(flags (:standard -w +A-40-42))))
+

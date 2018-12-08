@@ -1,0 +1,26 @@
+opam-version: "1.2"
+maintainer:   "kishore.neelamegam@rio.company"
+authors:      ["Kishorekumar Neelamegam"]
+license:      "MIT"
+homepage:     "https://gitlab.com/indykish/ocaml_lwt_dune"
+bug-reports:  "https://gitlab.com/indykish/ocaml_lwt_dune/issues"
+dev-repo:     "https://gitlab.com/indykish/ocaml_lwt_dune.git"
+doc:          "https://gitlab.com/indykish/ocaml_lwt_dune"
+
+build: [
+ ["jbuilder" "subst"] {pinned}
+ ["jbuilder" "build" "-p" name "-j" jobs]
+]
+
+depends: [
+  "jbuilder" {build & >= "1.0+beta20"}
+  "lwt" {>= "4.0.1"}
+  "lwt_ppx"
+  "result"
+  "fmt" {>= "0.8.0"} 
+  "cstruct" {>= "1.6.0"}
+  "jsonm" {>= "1.0.0"}
+  "logs" {>= "0.5.0"}
+  "astring"
+]
+available: [ocaml-version >= "4.06.0"]

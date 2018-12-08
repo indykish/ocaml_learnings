@@ -1,0 +1,8 @@
+(jbuild_version 1)
+
+(executable
+  ((name         chorus)
+   (public_name chorus)
+   (package     chorus)
+   (libraries   (cmdliner lwt
+                 logs.fmt logs.cli fmt.cli fmt.tty))))

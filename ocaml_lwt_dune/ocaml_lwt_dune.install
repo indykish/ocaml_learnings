@@ -1,0 +1,4 @@
+lib: [
+  "_build/install/default/lib/threads/META" {"META"}
+  "_build/install/default/lib/threads/opam" {"opam"}
+]

@@ -1,0 +1,25 @@
+opam-version: "1.2"
+maintainer:   "kishore.neelamegam@rio.company"
+authors:      ["Kishorekumar Neelamegam" "Thomas Leonard"]
+license:      "ISC"
+homepage:     "https://github.com/rioadvancement/ocamlchorus"
+bug-reports:  "https://github.com/rioadvancement/ocamlchorus/issues"
+dev-repo:     "https://github.com/rioadvancement/ocamlchorus.git"
+doc:          "https://github.com/rioadvancment/ocamlchorus"
+
+build: [
+ ["jbuilder" "subst"] {pinned}
+ ["jbuilder" "build" "-p" name "-j" jobs]
+]
+
+depends: [
+  "jbuilder" {build & >= "1.0+beta20"}
+  "result"
+  "fmt" {>= "0.8.0"} 
+  "cstruct" {>= "1.6.0"}
+  "jsonm" {>= "1.0.0"}
+  "lwt" {>= "2.4.7"}
+  "logs" {>= "0.5.0"}
+  "astring"
+]
+available: [ocaml-version >= "4.03.0"]

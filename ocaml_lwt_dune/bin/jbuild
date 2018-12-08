@@ -1,0 +1,9 @@
+(jbuild_version 1)
+
+(executable
+ ((name main)
+  (modules (main))
+  (libraries (lwt.unix lwt_ppx))
+  (preprocess (pps (lwt_ppx)))
+(flags (:standard -w +A-40-42))))
+
